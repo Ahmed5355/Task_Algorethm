@@ -33,13 +33,13 @@ console.log("Sorting By InsertionSort : ",insrtionSort(arr))
 // =============  Merge Sort  =====================
 // ================================================
 function mergeSort(arr) {
-    const half = arr.length / 2
+    const m = arr.length / 2
 
     if(arr.length < 2){
         return arr 
     }
     
-    const left = arr.splice(0, half)
+    const left = arr.splice(0, m)
     return merge(mergeSort(left),mergeSort(arr))
 }
 
